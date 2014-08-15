@@ -1,0 +1,77 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.form-options {
+  margin-bottom: 20px;
+}
+
+.authors .author {
+  margin-right: 5px;
+}
+.authors .author-label{
+  margin-right: 15px;
+}
+.authors .author-label:last-child {
+  margin-right: 0;
+}
+
+.aye-captain {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 49px;
+  height: 69px;
+  background-image: url(http://i.imgur.com/zgc06Ni.png);
+  -webkit-animation: boat_move 20s ease infinite;
+     -moz-animation: boat_move 20s ease infinite;
+       -o-animation: boat_move 20s ease infinite;
+          animation: boat_move 20s ease infinite;
+}
+
+@-webkit-keyframes boat_move {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-1000px);
+  }
+  51% {
+    -webkit-transform: translateX(-1000px) rotateY(180deg);
+  }
+  88% {
+    -webkit-transform: translateX(0) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+/*@-moz-keyframes boat_move {
+  50% {
+     -moz-transform: translateX(-1000px);
+  }
+  75% {
+    -moz-transform: rotateY(180deg);
+  }
+}
+@-o-keyframes boat_move {
+  50% {
+     -o-transform: translateX(-1000px);
+  }
+  75% {
+    -o-transform: rotateY(180deg);
+  }
+}
+@keyframes boat_move {
+  50% {
+     transform: translateX(-1000px);
+  }
+  75% {
+    transform: rotateY(180deg);
+  }*/
+}
